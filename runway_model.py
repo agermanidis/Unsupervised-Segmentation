@@ -42,7 +42,7 @@ device = torch.device("cuda" if torch.cuda.is_available() else 'cpu')
 
 command_inputs = {
     'image': runway.image,
-    'iterations': runway.number(default=64, min=1, max=128),
+    'iterations': runway.number(default=16, min=1, max=128),
     'min_labels': runway.number(default=4, min=1, max=256),
     'max_labels': runway.number(default=256, min=1, max=256)
 }
